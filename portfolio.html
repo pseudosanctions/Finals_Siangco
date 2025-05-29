@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Endless</title>
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="css/stylesnav.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo1">Endless.</div>
+    <nav>
+      <!-- Hamburger button for mobile nav -->
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="ormtable.html">Flowers</a></li>
+        <li><a href="knowmewell.html">KMW</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="Endless.html">Endless</a></li>
+        <li id="logoutNav" style="display:none;"><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2 class="portfolio-title">Portfolio</h2>
+    <div class="portfolio-categories">
+      <div class="portfolio-btn" data-category="online">
+        <span>Participation Online</span>
+      </div>
+      <div class="portfolio-btn" data-category="onsite">
+        <span>Participation Onsite</span>
+      </div>
+      <div class="portfolio-btn" data-category="unitoutput">
+        <span>Unit Output</span>
+      </div>
+      <div class="portfolio-btn" data-category="examinations">
+        <span>Examinations</span>
+      </div>
+      <div class="portfolio-btn" data-category="hoa">
+        <span>Hands-on Activities (HoA)</span>
+      </div>
+    </div>
+
+    <!-- Modal for activities listing -->
+    <div class="activity-modal" id="activity-modal">
+      <div class="activity-modal-content">
+        <span class="activity-modal-close" id="modal-close">&times;</span>
+        <h3 id="modal-title"></h3>
+        <div id="modal-activities" class="modal-activities"></div>
+      </div>
+    </div>
+
+  </main>
+  <script src="js/portfolio.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/zoom.js"></script>
+</body>
+
+</html>

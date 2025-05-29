@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Endless</title>
+    <link rel="stylesheet" href="css/endless.css">
+    <link rel="stylesheet" href="css/stylesnav.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo1">Endless.</div>
+        <nav>
+            <!-- Hamburger button for mobile nav -->
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="ormtable.html">Flowers</a></li>
+                <li><a href="knowmewell.html">KMW</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="Endless.html">Endless</a></li>
+                <li id="logoutNav" style="display:none;"><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="endless-main">
+        <!-- Snake Game Section -->
+        <section class="snake-section">
+            <h2>Endless Snake</h2>
+            <div class="snake-container">
+                <canvas id="snakeCanvas" width="320" height="320"></canvas>
+                <div class="snake-controls" id="snakeControls">
+                    <button data-dir="up" aria-label="Up">↑</button>
+                    <button data-dir="left" aria-label="Left">←</button>
+                    <button data-dir="down" aria-label="Down">↓</button>
+                    <button data-dir="right" aria-label="Right">→</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spotify-like Playlist Section (real Spotify embed) -->
+        <section class="playlist-section">
+            <h2>My Endless Playlist</h2>
+            <div class="playlist-player">
+                <div class="playlist-info">
+                    <!-- Replace the src URL below with your own playlist's embed link -->
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/5iISZVLmN8yJJJLgoiGotU?utm_source=generator" width="100%" height="152"
+                        frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="playlist-caption">
+                        Listen to my favorite tracks on Spotify!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="endless-quote-section">
+            <blockquote>
+                <span>“In the endless pursuit of growth, every ending is just a new beginning.”</span>
+            </blockquote>
+        </section>
+    </main>
+    <footer class="endless-footer">
+        &copy; 2025 Endless by Daniel Siangco
+    </footer>
+    <script src="js/endless.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

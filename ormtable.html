@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORM Table - Endless</title>
+  <link rel="stylesheet" href="css/styles2.css" />
+  <link rel="stylesheet" href="css/stylesnav.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo1">Endless.</div>
+    <nav>
+      <!-- Hamburger button for mobile nav -->
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="ormtable.html">Flowers</a></li>
+        <li><a href="knowmewell.html">KMW</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="Endless.html">Endless</a></li>
+        <li id="logoutNav" style="display:none;"><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2 class="orm-title">ORM Table</h2>
+    <div class="orm-controls">
+      <div class="orm-searchbar">
+        <input type="text" id="orm-search" placeholder="Search flowers by name, color, etc.">
+        <button id="orm-search-btn" aria-label="Search">
+          <span class="icon">&#128269;</span>
+        </button>
+      </div>
+    </div>
+    <div id="orm-results" class="orm-results">
+      <!-- Search results will appear here -->
+    </div>
+    <select id="orm-references">
+      <option value="">References</option>
+      <option value="ref1" data-url="https://www.almanac.com/flower-meanings-language-flowers">Almanac.com. (2025,
+        February 11). Flower meanings: The language of flowers</option>
+      <option value="ref2" data-url="https://flowerslib.com/flower-language/">FlowersLib. (2024, July 21). 109 flower
+        meanings: The language of flowers</option>
+      <option value="ref3"
+        data-url="https://www.gardeningchannel.com/flower-meanings-dictionary-from-a-to-z-the-secret-victorian-era-language-of-flowers/">
+        Gardening Channel. (2024, January 31). Secret flower meanings defined, from A to Z</option>
+      <option value="ref4" data-url="https://victorian-era.org/meaning-of-flowers.html">Victorian Era. (n.d.). Meaning
+        of flowers | List of meanings from flowers</option>
+    </select>
+  </main>
+  <script src="js/script3.js"></script>
+  <script src="js/navbar.js"></script>
+</body>
+
+</html>

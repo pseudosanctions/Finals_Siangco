@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Endless</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/stylesnav.css" />
+</head>
+
+<body class="second">
+    <header>
+      <div class="logo1">Endless.</div>
+      <nav>
+        <!-- Hamburger button for mobile nav -->
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About</a></li>
+          <li><a href="ormtable.html">Flowers</a></li>
+          <li><a href="knowmewell.html">KMW</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="Endless.html">Endless</a></li>
+          <li id="logoutNav" style="display:none;"><a href="#" id="logoutBtn">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+  <main>
+    <section class="about-section">
+      <div class="about-summary">
+        <h2>About Me</h2>
+        <p>
+          I am Daniel, an amateur developer passionate about the IT world. I enjoy learning new technologies, building small
+          projects, and exploring how software can solve real-world problems. I created this portfolio to document my
+          journey and growth in the tech world.
+        </p>
+      </div>
+      <div class="about-photo">
+        <img src="images/Picture1.jpg" alt="Daniel's Photo" />
+      </div>
+    </section>
+
+    <section class="expertise-section">
+      <h2>Areas of Expertise</h2>
+      <div class="expertise-buttons">
+        <button class="expertise-btn" data-expertise="webdev">Web Development</button>
+        <button class="expertise-btn" data-expertise="python">Python Programming</button>
+        <button class="expertise-btn" data-expertise="automation">Automation</button>
+      </div>
+    </section>
+
+    <div id="expertise-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn" id="closeExpertise">&times;</span>
+        <h3 id="expertise-title"></h3>
+        <p id="expertise-description"></p>
+        <div id="expertise-photos" class="modal-gallery"></div>
+      </div>
+    </div>
+
+    <section class="education-section">
+      <h2>Educational Background</h2>
+      <button id="education-btn" class="edu-main-btn">Show Education Options</button>
+      <div id="education-options" class="edu-options hidden">
+        <button class="edu-btn" data-edu="elementary">Elementary</button>
+        <button class="edu-btn" data-edu="highschool">High School</button>
+        <button class="edu-btn" data-edu="seniorhs">Senior High School</button>
+        <button class="edu-btn" data-edu="college">College</button>
+      </div>
+    </section>
+
+    <div id="education-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn" id="closeEducation">&times;</span>
+        <h3 id="edu-title"></h3>
+        <img id="edu-image" class="edu-img" src="" alt="" />
+        <p id="edu-description"></p>
+      </div>
+    </div>
+
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <a href="mailto:siangcodanielt@gmail.com" class="contact-link">siangcodanielt@gmail.com</a>
+        <div class="contact-socials">
+          <a href="https://www.facebook.com/changkiee.siangco" target="_blank" aria-label="Facebook" class="social-btn">F</a>
+          <a href="https://x.com/daniel_siangco" target="_blank" aria-label="Twitter" class="social-btn">X</a>
+          <a href="https://github.com/pseudosanctions" target="_blank" aria-label="GitHub" class="social-btn">G</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+  <script src="js/navbar.js"></script>
+</body>
+
+</html>
